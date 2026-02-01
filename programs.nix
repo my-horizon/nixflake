@@ -26,6 +26,9 @@
     kdePackages.okular
     libreoffice-still
     hyphenDicts.de_DE
+    grim
+    slurp
+    swappy
     nerd-fonts.jetbrains-mono
     xwayland
 
