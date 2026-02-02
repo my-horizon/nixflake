@@ -1,14 +1,20 @@
-{ inputs, ... }:
+{ inputs, self, ... }:
 {
   flake = {
+    nixosModules = {
+      programs = ./programs.nix;
+      services = ./services.nix;
+      nvf = ./nvf.nix;
+    };
+
     nixosConfigurations.desktop = inputs.nixpkgs.lib.nixosSystem {
-      system = [ "x86_64-linux" ];
+      system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        ./programs.nix
-        ./services.nix
+        self.nixosModules.programs
+        self.nixosModules.services
         inputs.nvf.nixosModules.default
-        ./nvf.nix
+        self.nixosModules.nvf
       ];
     };
   };
