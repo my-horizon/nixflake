@@ -10,6 +10,7 @@
 
         settings = {
 
+          vim.visuals.indent-blankline.enable = true;
           vim.statusline.lualine.enable = true;
 
           # lsp's
