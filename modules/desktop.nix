@@ -3,7 +3,6 @@
   flake.nixosModules.desktop =
     { pkgs, ... }:
     {
-      imports = [ ./hardware-configuration.nix ];
 
       nix.settings.experimental-features = [
         "nix-command"
@@ -57,6 +56,7 @@
   flake.nixosConfigurations.desktop = inputs.nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
     modules = [
+      ./hardware-configuration.nix
       self.nixosModules.desktop
       self.nixosModules.programs
       self.nixosModules.services
