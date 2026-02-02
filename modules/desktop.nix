@@ -56,7 +56,7 @@
   flake.nixosConfigurations.desktop = inputs.nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
     modules = [
-      ./_hardware-configuration.nix
+      ../hardware-configuration.nix
       self.nixosModules.desktop
       self.nixosModules.programs
       self.nixosModules.services
