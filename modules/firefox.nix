@@ -41,9 +41,6 @@
                     url = "https://github.com";
                   }
                   {
-                    type = "divider";
-                  }
-                  {
                     name = "gateway";
                     url = "https://192.168.1.1";
                   }
@@ -60,18 +57,12 @@
                     url = "http://192.168.10.150:8081";
                   }
                   {
-                    type = "divider";
-                  }
-                  {
                     name = "nextcloud";
                     url = "http://192.168.10.150:8180";
                   }
                   {
                     name = "immich";
                     url = "http://192.168.10.150:8181";
-                  }
-                  {
-                    type = "divider";
                   }
                   {
                     name = "akad";
