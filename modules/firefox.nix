@@ -34,17 +34,22 @@
             "extensions.formautofill.creditCards.enabled" = false;
             # deactivate address saving
             "extensions.formautofill.addresses.enabled" = false;
-            # disable chronic
+            # disable history
             "browser.privatebrowsing.autostart" = true;
             "places.history.enabled" = false;
             #disable popups
             "dom.disable_open_during_load" = true;
             # disable data collection
+            "datareporting.usage.uploadEnabled" = false;
             "datareporting.healthreport.uploadEnabled" = false;
             "datareporting.policy.dataSubmissionEnabled" = false;
             "toolkit.telemetry.enabled" = false;
             "toolkit.telemetry.unified" = false;
-            "toolkit.telemetry.pioneer-new-studies-available" = false;
+            "toolkit.telemetry.bhrPing.enabled" = false;
+            "toolkit.telemetry.firstShutdownPing.enabled" = false;
+            "toolkit.telemetry.newProfilePing.enabled" = false;
+            "toolkit.telemetry.updatePing.enabled" = false;
+            "toolkit.telemetry.shutdownPingSender.enabled" = false;
             "app.shield.optoutstudies.enabled" = false;
             "browser.ping-centre.telemetry" = false;
             "browser.crashReports.unsubmittedCheck.autoSubmit2" = false;
@@ -61,7 +66,7 @@
             "dom.security.https_only_mode" = true;
             "dom.security.https_only_mode_ever_enabled" = true;
             # dns over https
-            "network.trr.mode" = 2;
+            "network.trr.mode" = 1;
             # anything else
             "browser.newtabpage.activity-stream.showSponsored" = false;
             "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
