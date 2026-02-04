@@ -58,6 +58,7 @@
     modules = [
       ../hardware-configuration.nix
       self.nixosModules.desktop
+      self.nixosModules.home-manager
       self.nixosModules.programs
       self.nixosModules.services
       self.nixosModules.nvf
