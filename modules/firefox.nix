@@ -8,9 +8,53 @@
         profiles.default = {
           isDefault = true;
 
+          search = {
+            default = "DuckDuckGo";
+            force = true;
+            engines = {
+              "Google".metaData.hidden = true;
+              "Bing".metaData.hidden = true;
+              "Ecosia".metaData.hidden = true;
+              "Perplexity".metaData.hidden = true;
+              "Wikipedia (en)".metaData.hidden = true;
+            };
+          };
+
           settings = {
             # homepage
-            "browser.startup.homepage" = "about:blank";
+            "browser.startup.homepage" = "about:home";
+            "browser.newtabpage.enabled" = true;
+            # firefox home content
+            "browser.newtabpage.activity-stream.showSearch" = true;
+            "browser.newtabpage.activity-stream.feeds.topsites" = false;
+            "browser.newtabpage.activity-stream.feeds.section.highlights" = false;
+            "browser.newtabpage.activity-stream.feeds.snippets" = false;
+            "browser.newtabpage.activity-stream.showSponsored" = false;
+            "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+            "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false;
+            "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
+            "browser.newtabpage.activity-stream.section.highlights.includeVisited" = false;
+            "browser.newtabpage.activity-stream.section.highlights.includeBookmarks" = false;
+            "browser.newtabpage.activity-stream.section.highlights.includeDownloads" = false;
+            # default search engine
+            "browser.urlbar.placeholderName" = "DuckDuckGo";
+            "browser.urlbar.placeholderName.private" = "DuckDuckGo";
+            # search suggestions
+            "browser.search.suggest.enabled" = false;
+            "browser.urlbar.suggest.searches" = false;
+            "browser.urlbar.showSearchSuggestionsFirst" = false;
+            "browser.urlbar.suggest.trending" = false;
+            "browser.urlbar.suggest.recentsearches" = false;
+            # address bar
+            "browser.urlbar.suggest.history" = true;
+            "browser.urlbar.suggest.bookmark" = true;
+            "browser.urlbar.suggest.openpage" = false;
+            "browser.urlbar.suggest.topsites" = false;
+            "browser.urlbar.suggest.engines" = false;
+            "browser.urlbar.suggest.quickactions" = false;
+            "browser.urlbar.shortcuts.bookmarks" = false;
+            "browser.urlbar.shortcuts.tabs" = false;
+            "browser.urlbar.shortcuts.history" = false;
             # tracking policies
             "privacy.trackingprotection.enabled" = true;
             "privacy.trackingprotection.socialtracking.enabled" = true;
@@ -67,13 +111,6 @@
             "dom.security.https_only_mode_ever_enabled" = true;
             # dns over https
             "network.trr.mode" = 1;
-            # anything else
-            "browser.newtabpage.activity-stream.showSponsored" = false;
-            "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
-            "browser.discovery.enabled" = false;
-            "privacy.donottrackheader.enabled" = false;
-            "privacy.send_pings" = false;
-            "extensions.pocket.enabled" = false;
           };
 
           extensions.packages = with inputs.nur.legacyPackages.x86_64-linux.repos.rycee.firefox-addons; [
