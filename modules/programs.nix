@@ -20,7 +20,6 @@
         cifs-utils
         wofi
         thunderbird
-        firefox
         evince
         kdePackages.okular
         libreoffice-still

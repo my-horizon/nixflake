@@ -62,6 +62,7 @@
       self.nixosModules.programs
       self.nixosModules.services
       self.nixosModules.nvf
+      self.nixosModules.firefox
     ];
   };
 }
