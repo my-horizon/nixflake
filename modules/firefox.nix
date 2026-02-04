@@ -16,8 +16,6 @@
             "privacy.trackingprotection.enabled" = true;
             "privacy.donottrackheader.enabled" = false;
             "privacy.send_pings" = false;
-            "extensions.autoDisableScopes" = 0;
-            "extensions.enabledScopes" = 15;
             "extensions.pocket.enabled" = false;
           };
 
