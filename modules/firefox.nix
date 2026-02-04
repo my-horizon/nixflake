@@ -10,13 +10,15 @@
 
           settings = {
             "browser.startup.homepage" = "about:blank";
+            "browser.newtabpage.activity-stream.showSponsored" = false;
+            "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+            "browser.discovery.enabled" = false;
             "privacy.trackingprotection.enabled" = true;
             "privacy.donottrackheader.enabled" = false;
             "privacy.send_pings" = false;
-            "browser.newtabpage.activity-stream.showSponsored" = false;
-            "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+            "extensions.autoDisableScopes" = 0;
+            "extensions.enabledScopes" = 15;
             "extensions.pocket.enabled" = false;
-            "browser.discovery.enabled" = false;
           };
 
           extensions.packages = with inputs.nur.legacyPackages.x86_64-linux.repos.rycee.firefox-addons; [
