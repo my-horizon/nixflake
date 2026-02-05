@@ -6,6 +6,9 @@
         enable = true;
         settings = {
 
+          # terminal
+          term = "xterm-256color";
+
           # font
           font-family = "JetBrainsMono Nerd Font";
           font-size = 12;
