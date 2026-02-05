@@ -11,7 +11,6 @@
         waybar
         networkmanagerapplet
         pwvucontrol
-        ghostty
         neovim
         yazi
         git

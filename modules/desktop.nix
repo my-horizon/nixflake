@@ -62,6 +62,7 @@
       self.nixosModules.desktop
       self.nixosModules.home-manager
       self.nixosModules.zsh
+      self.nixosModules.ghostty
       self.nixosModules.programs
       self.nixosModules.services
       self.nixosModules.nvf
