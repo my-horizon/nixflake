@@ -24,10 +24,9 @@
             window-padding-y = 10;
 
             # theme
-            theme = "catppuccin-mocha";
+            theme = "Catppuccin Mocha";
           };
         };
-        xdg.configFile."ghostty/themes".source = "${pkgs.catppuccin}/ghostty";
       };
   };
 }
