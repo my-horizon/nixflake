@@ -1,27 +1,33 @@
 { ... }:
 {
   flake.nixosModules.ghostty = {
-    home-manager.users.unknown = {
-      programs.ghostty = {
-        enable = true;
-        settings = {
+    home-manager.users.unknown =
+      { pkgs, ... }:
+      {
+        programs.ghostty = {
+          enable = true;
+          settings = {
 
-          # terminal
-          term = "xterm-256color";
+            # terminal
+            term = "xterm";
 
-          # font
-          font-family = "JetBrainsMono Nerd Font";
-          font-size = 12;
+            # font
+            font-family = "JetBrainsMono Nerd Font";
+            font-size = 12;
 
-          # cursor
-          cursor-style = "block";
+            # cursor
+            cursor-style = "block";
 
-          # window
-          background-opacity = 1.0;
-          window-padding-x = 10;
-          window-padding-y = 10;
+            # window
+            background-opacity = 1.0;
+            window-padding-x = 10;
+            window-padding-y = 10;
+
+            # theme
+            theme = "catppuccin-mocha";
+          };
         };
+        xdg.configFile."ghostty/themes".source = "${pkgs.catppuccin}/ghostty";
       };
-    };
   };
 }
