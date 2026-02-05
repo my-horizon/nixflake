@@ -15,6 +15,9 @@
       # Use latest kernel
       boot.kernelPackages = pkgs.linuxPackages_latest;
 
+      # active shell
+      programs.zsh.enable = true;
+
       # Define hostname
       networking.hostName = "desktop";
 
