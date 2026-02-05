@@ -3,7 +3,6 @@
   flake.nixosModules.desktop =
     { pkgs, ... }:
     {
-
       nix.settings.experimental-features = [
         "nix-command"
         "flakes"
@@ -44,12 +43,12 @@
       users.users.unknown = {
         isNormalUser = true;
         description = "unknown";
+        shell = pkgs.zsh;
         extraGroups = [
           "networkmanager"
           "wheel"
         ];
       };
-
       system.stateVersion = "25.11";
     };
 
@@ -59,6 +58,7 @@
       ../hardware-configuration.nix
       self.nixosModules.desktop
       self.nixosModules.home-manager
+      self.nixosModules.zsh
       self.nixosModules.programs
       self.nixosModules.services
       self.nixosModules.nvf
