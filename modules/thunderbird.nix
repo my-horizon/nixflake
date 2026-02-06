@@ -1,6 +1,6 @@
 { ... }:
 {
-  flake.nixosModules.thunderbid = {
+  flake.nixosModules.thunderbird = {
     home-manager.users.unknown = {
       programs.thunderbird = {
         enable = true;
