@@ -117,7 +117,7 @@
             bitwarden
             vimium
             darkreader
-            tokyo-night-v2
+            catppuccin-mocha-mauve
           ];
 
           bookmarks = {
