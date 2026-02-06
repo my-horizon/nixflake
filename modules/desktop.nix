@@ -60,7 +60,7 @@
     modules = [
       ../hardware-configuration.nix
       self.nixosModules.desktop
-      self.nixosModules.home-manager
+      self.nixosModules.home
       self.nixosModules.services
       self.nixosModules.zsh
       self.nixosModules.ghostty

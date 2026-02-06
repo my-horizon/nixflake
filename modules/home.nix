@@ -1,7 +1,7 @@
 { inputs, ... }:
 {
-  flake.nixosModules.home-manager = {
-    imports = [ inputs.home-manager.nixosModules.home-manager ];
+  flake.nixosModules.home = {
+    imports = [ inputs.home-manager.nixosModules.home ];
 
     home-manager = {
       useGlobalPkgs = true;
