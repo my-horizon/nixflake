@@ -117,6 +117,7 @@
             bitwarden
             vimium
             darkreader
+            gruvbox-dark-theme
           ];
 
           bookmarks = {
