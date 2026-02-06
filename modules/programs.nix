@@ -18,7 +18,6 @@
         zip
         cifs-utils
         wofi
-        thunderbird
         evince
         kdePackages.okular
         libreoffice-still

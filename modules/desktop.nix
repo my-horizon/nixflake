@@ -61,12 +61,13 @@
       ../hardware-configuration.nix
       self.nixosModules.desktop
       self.nixosModules.home-manager
+      self.nixosModules.services
       self.nixosModules.zsh
       self.nixosModules.ghostty
-      self.nixosModules.programs
-      self.nixosModules.services
       self.nixosModules.nvf
       self.nixosModules.firefox
+      self.nixosModules.thunderbird
+      self.nixosModules.programs
     ];
   };
 }
