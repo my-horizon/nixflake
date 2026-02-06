@@ -110,7 +110,7 @@
             "dom.security.https_only_mode" = true;
             "dom.security.https_only_mode_ever_enabled" = true;
             # dns over https
-            "network.trr.mode" = 1;
+            "network.trr.mode" = 5;
           };
 
           extensions.packages = with inputs.nur.legacyPackages.x86_64-linux.repos.rycee.firefox-addons; [
