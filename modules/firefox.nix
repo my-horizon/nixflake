@@ -117,7 +117,7 @@
             bitwarden
             vimium
             darkreader
-            gruvbox-dark-theme
+            tokyo-night-v2
           ];
 
           bookmarks = {
