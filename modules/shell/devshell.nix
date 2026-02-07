@@ -3,11 +3,18 @@
   perSystem =
     { pkgs, ... }:
     {
-      devShells.default = pkgs.mkShell {
-        packages = with pkgs; [
-          clang
-          racket
-        ];
+      devShells = {
+        default = pkgs.mkShell {
+          packages = with pkgs; [
+            clang
+          ];
+        };
+
+        uni = pkgs.mkShell {
+          packages = with pkgs; [
+            racket
+          ];
+        };
       };
     };
 }
